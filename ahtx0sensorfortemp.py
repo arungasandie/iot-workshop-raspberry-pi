@@ -5,6 +5,6 @@ i2c=I2C(1, scl=Pin(15), sda=Pin(14))
 sensor=ahtx0.AHT10(i2c)
 
 while True:
-    #print(sensor.temperature)
-    print(sensor.relative_humidity)
+    print(sensor.temperature)
+    #print(sensor.relative_humidity)
     sleep(1)
